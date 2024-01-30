@@ -19,6 +19,7 @@ function ageCalculate(){
 
 
     leapChecker(currentYear);
+    
     if(
         birthDetails.year > currentYear ||
         ( birthDetails.month > currentMonth && 
@@ -42,7 +43,7 @@ function ageCalculate(){
     }
 
 
-    if(currentMonth >= birthDetails.date)
+    if(currentDate >= birthDetails.date)
     {
         birthDate = currentDate - birthDetails.date;
     }
